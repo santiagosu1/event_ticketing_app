@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+header{
+    display: flex;
+    height: 9dvh;
+    background-color: rgb(226, 231, 231);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.divLogo{
+    width: 60px;
+}
+
+.divLogo img{
+    width: 100%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center; 
+    width: 100%;
+    max-width: 500px; 
+    padding: 10px 14px;
+    background-color: #fff; 
+    border: 2px solid #e2e8f0; 
+    border-radius: 12px; 
+    transition: all 0.3s ease; 
+  }
+
+ 
+.search-container:focus-within {
+    border-color: #3b82f6; 
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); 
+}
+
+ 
+.search-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+    color: #9ca3af; 
+}
+
+ 
+.search-input {
+    flex-grow: 1; 
+    border: none;
+    outline: none; 
+    font-size: 16px;
+    color: #1f2937; 
+    background: transparent; 
+}
+
+.search-input::placeholder {
+    color: #9ca3af; 
+}
+
+.naviga{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.naviga ul{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.naviga ul li{
+    cursor: pointer;
+    border: 1px gray solid;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.naviga svg{
+    width: 20px;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+.footerFirst{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.imgFooterLogo{
+    width: 180px;
+}
+
+.imgFooterLogo img{
+    width: 100%;
+}
+
+.fooAbout{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fooLegal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fooSocial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navFooSocial ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.navFooSocial svg{
+    cursor: pointer;
+    width: 35px;
+    fill: white;
+}
+
+.helpFoo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btnHelp{
+    display: flex;
+    gap: 15px;
+}
+
+.btnHelp button{
+    padding: 10px 20px;
+    border: 1px gray solid;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.btnHelp button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.footerSecond{
+    display: flex;
+    justify-content: end;
+    padding: 40px;
+}
