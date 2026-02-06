@@ -88,7 +88,7 @@ export default function MainLayout() {
                 <hr/>
 
                 <div className="footerSecond">
-                    <p>Copyright © EventHub Pro 2026 | All rights reserved.</p>
+                    <p>Copyright (c) EventHub Pro 2026 | All rights reserved.</p>
                 </div>
             </footer>  
         </>

@@ -5,7 +5,7 @@
 .events-section-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 32px;
 }
 
@@ -34,13 +34,30 @@
     gap: 12px;
 }
 
+.events-section-nav.overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    padding: 0 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.events-section-nav.overlay .events-nav-btn {
+    pointer-events: auto;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
 .events-nav-btn {
-    width: 44px;
-    height: 44px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
-    background: var(--text-dark);
-    color: white;
-    border: none;
+    background: #111827;
+    color: #ffffff;
+    border: 1px solid #0f172a;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -49,12 +66,14 @@
 }
 
 .events-nav-btn:hover {
-    background: var(--primary-color);
+    background: #0f172a;
     transform: scale(1.05);
 }
 
 .events-nav-btn:disabled {
-    background: var(--border-color);
+    background: #f1f5f9;
+    color: #94a3b8;
+    border-color: #e2e8f0;
     cursor: not-allowed;
     transform: scale(1);
 }
@@ -74,10 +93,15 @@
     scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .events-grid-wrapper::-webkit-scrollbar {
     display: none;
+}
+
+.events-grid-wrapper.paged-wrapper {
+    overflow-x: hidden;
 }
 
 .events-grid {
@@ -88,14 +112,13 @@
 }
 
 .events-grid.carousel {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
-    grid-auto-flow: column;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    display: flex;
     gap: 20px;
+    width: max-content;
 }
 
 .events-grid.carousel>* {
+    flex: 0 0 280px;
     scroll-snap-align: start;
 }
 
@@ -135,8 +158,8 @@
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
 
-    .events-grid.carousel {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 240px));
+    .events-grid.carousel>* {
+        flex: 0 0 240px;
     }
 }
 
@@ -156,7 +179,7 @@
         gap: 16px;
     }
 
-    .events-grid.carousel {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    .events-grid.carousel>* {
+        flex: 0 0 200px;
     }
 }

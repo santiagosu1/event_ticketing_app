@@ -45,7 +45,7 @@ export default function HeroCarousel({ slides }) {
             <button
                 className="hero-nav-button prev"
                 onClick={prevSlide}
-                aria-label="Anterior"
+                aria-label="Previous"
             >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M15 18l-6-6 6-6" />
@@ -55,7 +55,7 @@ export default function HeroCarousel({ slides }) {
             <button
                 className="hero-nav-button next"
                 onClick={nextSlide}
-                aria-label="Siguiente"
+                aria-label="Next"
             >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M9 18l6-6-6-6" />
@@ -68,7 +68,7 @@ export default function HeroCarousel({ slides }) {
                         key={index}
                         className={`hero-indicator ${index === currentIndex ? 'active' : ''}`}
                         onClick={() => goToSlide(index)}
-                        aria-label={`Ir a slide ${index + 1}`}
+                        aria-label={`Go to slide ${index + 1}`}
                     />
                 ))}
             </div>
