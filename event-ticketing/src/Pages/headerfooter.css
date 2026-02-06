@@ -12,6 +12,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    gap: 10px;
 }
 
 .divLogo{
@@ -175,4 +176,104 @@ footer{
     display: flex;
     justify-content: end;
     padding: 40px;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 20;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #1f2937;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.hamburger.active .bar:nth-child(2) { opacity: 0; }
+.hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+
+/* --- RESPONSIVE / MEDIA QUERIES --- */
+@media screen and (max-width: 900px) {
+
+    header {
+        height: auto;
+        min-height: 9dvh;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+        position: relative; 
+    }
+
+    .divLogo { width: 60px; }
+
+    .search-container {
+        max-width: 100%;
+        width: 100%;
+        order: 3;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .naviga {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: rgb(226, 231, 231); 
+        padding: 20px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .naviga.show {
+        display: flex;
+    }
+
+    .naviga ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .naviga ul li {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        justify-content: flex-start;
+        font-size: 16px;
+    }
+
+    .naviga ul li:last-child {
+        border-bottom: none;
+    }
+
+    .footerFirst {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    .fooAbout, .fooLegal, .fooSocial, .btnHelp {
+        width: 100%;
+        align-items: center;
+    }
+    .navFooSocial ul { justify-content: center; }
+    .btnHelp button { width: 100%; }
+    .footerSecond { justify-content: center; padding: 20px; text-align: center; }
 }
