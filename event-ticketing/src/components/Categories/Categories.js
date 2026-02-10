@@ -35,7 +35,7 @@ const categoryIcons = {
     )
 };
 
-export default function Categories() {
+export default function Categories({ selectedCategory, onCategorySelect = () => { } }) {
     const categories = [
         'Arts & Culture',
         'Food & Drinks',
@@ -54,7 +54,11 @@ export default function Categories() {
 
             <div className="categories-grid">
                 {categories.map((category, index) => (
-                    <div key={index} className="category-item">
+                    <div
+                        key={index}
+                        className={`category-item ${selectedCategory === category ? 'selected' : ''}`}
+                        onClick={() => onCategorySelect(category === selectedCategory ? null : category)}
+                    >
                         <div className="category-icon">
                             {categoryIcons[category]}
                         </div>
@@ -62,6 +66,7 @@ export default function Categories() {
                     </div>
                 ))}
             </div>
+
 
             <div className="categories-show-more">
                 <button className="show-more-btn">
@@ -71,6 +76,25 @@ export default function Categories() {
                     </svg>
                 </button>
             </div>
+            <style jsx>{`
+                .category-item {
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+                .category-item:hover {
+                    transform: translateY(-5px);
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+                .category-item.selected {
+                    background-color: var(--primary-color, #ff4d4d);
+                    color: white;
+                    transform: scale(1.05);
+                    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+                }
+                .category-item.selected svg {
+                    fill: white;
+                }
+            `}</style>
         </section>
     );
 }
