@@ -1,0 +1,21 @@
+.home-page {
+    min-height: 100vh;
+    background: var(--bg-light);
+    padding: 32px 0;
+}
+
+.home-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+    .home-page {
+        padding: 20px 0;
+    }
+
+    .home-container {
+        padding: 0 16px;
+    }
+}
