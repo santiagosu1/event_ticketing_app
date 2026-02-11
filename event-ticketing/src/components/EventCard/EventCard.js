@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './EventCard.css';
 
 export default function EventCard({ event }) {
     const [liked, setLiked] = useState(false);
+    const navigate = useNavigate();
+
+    function HandleEventClick(){
+        navigate(`/checkout/${event.id}`);
+    }
 
     return (
         <div className="event-card">
             <img
+                onClick={HandleEventClick}
                 src={event.image}
                 alt={event.title}
                 className="event-card-image"
@@ -34,6 +41,7 @@ export default function EventCard({ event }) {
 
                     <div className="event-card-actions">
                         <button
+                            type="button"
                             className={`event-card-action-btn ${liked ? 'liked' : ''}`}
                             onClick={(e) => {
                                 e.stopPropagation();
@@ -47,6 +55,7 @@ export default function EventCard({ event }) {
                         </button>
 
                         <button
+                            type="button"
                             className="event-card-action-btn"
                             onClick={(e) => e.stopPropagation()}
                             aria-label="Share"
