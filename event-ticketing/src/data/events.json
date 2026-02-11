@@ -1,0 +1,987 @@
+{
+  "heroSlides": [
+    {
+      "id": "hero-1",
+      "title": "Shadys 45 Years - Symphonic Gala",
+      "subtitle": "A magical night of symphonic music",
+      "image": "/images/hero-concert-shadys.png",
+      "eventId": "evt-001"
+    },
+    {
+      "id": "hero-2",
+      "title": "The House - Electronic Music",
+      "subtitle": "The best electronic music in Latin America",
+      "image": "/images/event-the-house.png",
+      "eventId": "evt-002"
+    },
+    {
+      "id": "hero-3",
+      "title": "Le Paris - Fine Dining Experience",
+      "subtitle": "French haute cuisine gastronomy",
+      "image": "/images/event-le-paris.png",
+      "eventId": "evt-003"
+    }
+  ],
+  "cantMissPlans": [
+    {
+      "id": "evt-004",
+      "title": "Valentine's Plans | 2026",
+      "date": "14 FEB",
+      "location": "Lima",
+      "venue": "Exposition Park",
+      "price": "$10.00",
+      "originalPrice": "$15.00",
+      "image": "/images/event-valentines.png",
+      "category": "romantic",
+      "availableTickets": 500,
+      "isFeatured": true
+    },
+    {
+      "id": "evt-002",
+      "title": "THE HOUSE",
+      "date": "29 JAN",
+      "location": "Lima",
+      "venue": "Peru Arena",
+      "price": "$80.00",
+      "image": "/images/event-the-house.png",
+      "category": "electronic",
+      "availableTickets": 2000,
+      "isFeatured": true
+    },
+    {
+      "id": "evt-001",
+      "title": "Shadys 45 Years - Symphonic Gala",
+      "date": "13 FEB",
+      "location": "Lima",
+      "venue": "National Grand Theater",
+      "price": "$150.00",
+      "image": "/images/hero-concert-shadys.png",
+      "category": "concerts",
+      "availableTickets": 800,
+      "isFeatured": true
+    },
+    {
+      "id": "evt-005",
+      "title": "Montecarlo Circus Huanuco 2026",
+      "date": "28 JAN",
+      "location": "Huanuco",
+      "venue": "Heraclio Tapia Stadium",
+      "price": "$20.00",
+      "image": "/images/event-circus.png",
+      "category": "family",
+      "availableTickets": 3000,
+      "isFeatured": false
+    },
+    {
+      "id": "evt-003",
+      "title": "Le Paris - Elegant Dinner",
+      "date": "31 JAN",
+      "location": "Lima",
+      "venue": "Westin Hotel",
+      "price": "$120.00",
+      "image": "/images/event-le-paris.png",
+      "category": "gastronomy",
+      "availableTickets": 150,
+      "isFeatured": true
+    },
+    {
+      "id": "evt-006",
+      "title": "Peruvian Rock Festival Vol. 02",
+      "date": "15 FEB",
+      "location": "Trujillo",
+      "venue": "Mansiche Stadium",
+      "price": "$50.00",
+      "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&h=300&fit=crop",
+      "category": "concerts",
+      "availableTickets": 5000,
+      "isFeatured": false
+    },
+    {
+      "id": "evt-007",
+      "title": "SUU RABANAL: THE LAW",
+      "date": "08 FEB",
+      "location": "Callao",
+      "venue": "Convention Center",
+      "price": "$50.00",
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+      "category": "concerts",
+      "availableTickets": 1200,
+      "isFeatured": false
+    },
+    {
+      "id": "evt-008",
+      "title": "SALSA CUMBIA - YAIPEN BROTHERS",
+      "date": "22 FEB",
+      "location": "Chiclayo",
+      "venue": "Gran Chimu Coliseum",
+      "price": "$30.00",
+      "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop",
+      "category": "concerts",
+      "availableTickets": 2500,
+      "isFeatured": false
+    }
+  ],
+  "recommendedEvents": [
+    {
+      "id": "evt-005",
+      "title": "Montecarlo Circus Huanuco 2026",
+      "date": "28 JAN",
+      "location": "Huanuco",
+      "venue": "Heraclio Tapia Stadium",
+      "price": "$90.00",
+      "image": "/images/event-circus.png",
+      "category": "family"
+    },
+    {
+      "id": "evt-003",
+      "title": "Le Paris - Elegant Dinner Event",
+      "date": "29 JAN",
+      "location": "Lima",
+      "venue": "Westin Hotel",
+      "price": "$0.00",
+      "image": "/images/event-le-paris.png",
+      "category": "gastronomy"
+    },
+    {
+      "id": "evt-002",
+      "title": "THE HOUSE - Electronic Night",
+      "date": "30 JAN",
+      "location": "Lima",
+      "venue": "Peru Arena",
+      "price": "$12.90",
+      "image": "/images/event-the-house.png",
+      "category": "electronic"
+    },
+    {
+      "id": "evt-001",
+      "title": "Shadys - Symphonic Gala",
+      "date": "30 JAN",
+      "location": "Lima",
+      "venue": "National Grand Theater",
+      "price": "$149.00",
+      "image": "/images/hero-concert-shadys.png",
+      "category": "concerts"
+    }
+  ],
+  "allEvents": [
+    {
+      "id": "evt-001",
+      "title": "Shadys 45 Years - Symphonic Gala",
+      "description": "Celebrate 45 years of Shadys with an unforgettable symphonic gala. A night full of magic, classical music, and the best artists in the country.",
+      "date": "13 FEB",
+      "fullDate": "2026-02-13",
+      "time": "20:00",
+      "endTime": "23:00",
+      "location": "Lima",
+      "venue": "National Grand Theater",
+      "address": "Av. Javier Prado Este 2465, San Borja",
+      "price": "$150.00",
+      "priceValue": 150,
+      "currency": "USD",
+      "image": "/images/hero-concert-shadys.png",
+      "gallery": [
+        "/images/hero-concert-shadys.png"
+      ],
+      "category": "concerts",
+      "tags": [
+        "symphonic",
+        "gala",
+        "classical music",
+        "orchestra"
+      ],
+      "organizer": {
+        "name": "Shadys Productions",
+        "logo": "/images/organizers/shadys-logo.png",
+        "phone": "+51 999 888 777",
+        "email": "contact@shadys.pe"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-001-vip",
+          "name": "VIP",
+          "price": 250,
+          "description": "VIP access with meet & greet, preferred seating, and dinner included",
+          "available": 100,
+          "maxPerOrder": 4
+        },
+        {
+          "id": "tkt-001-orchestra",
+          "name": "Orchestra",
+          "price": 150,
+          "description": "Orchestra seating with excellent stage view",
+          "available": 300,
+          "maxPerOrder": 6
+        },
+        {
+          "id": "tkt-001-general",
+          "name": "General Admission",
+          "price": 80,
+          "description": "General admission with access to all common areas",
+          "available": 400,
+          "maxPerOrder": 10
+        }
+      ],
+      "ageRestriction": "18+",
+      "status": "on-sale",
+      "isFeatured": true,
+      "availableTickets": 800,
+      "soldTickets": 234
+    },
+    {
+      "id": "evt-002",
+      "title": "THE HOUSE - Electronic Music Event",
+      "description": "The best electronic party in Lima. International DJs, cutting-edge visuals, and a unique experience.",
+      "date": "29 JAN",
+      "fullDate": "2026-01-29",
+      "time": "22:00",
+      "endTime": "06:00",
+      "location": "Lima",
+      "venue": "Peru Arena",
+      "address": "Av. La Marina 2000, San Miguel",
+      "price": "$80.00",
+      "priceValue": 80,
+      "currency": "USD",
+      "image": "/images/event-the-house.png",
+      "gallery": [
+        "/images/event-the-house.png"
+      ],
+      "category": "electronic",
+      "tags": [
+        "electronic",
+        "DJ",
+        "party",
+        "rave"
+      ],
+      "organizer": {
+        "name": "The House Events",
+        "logo": "/images/organizers/thehouse-logo.png",
+        "phone": "+51 987 654 321",
+        "email": "info@thehouse.pe"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-002-vip",
+          "name": "VIP Lounge",
+          "price": 180,
+          "description": "VIP table for 4 people with bottle service included",
+          "available": 50,
+          "maxPerOrder": 2
+        },
+        {
+          "id": "tkt-002-early",
+          "name": "Early Bird",
+          "price": 60,
+          "description": "Early entry with special pricing",
+          "available": 0,
+          "maxPerOrder": 4
+        },
+        {
+          "id": "tkt-002-general",
+          "name": "General Admission",
+          "price": 80,
+          "description": "General admission to the event",
+          "available": 1500,
+          "maxPerOrder": 8
+        }
+      ],
+      "ageRestriction": "18+",
+      "status": "on-sale",
+      "isFeatured": true,
+      "availableTickets": 2000,
+      "soldTickets": 450
+    },
+    {
+      "id": "evt-003",
+      "title": "Le Paris - Elegant Dinner Experience",
+      "description": "A unique French gastronomic experience. 7-course tasting menu paired with the finest house wines.",
+      "date": "31 JAN",
+      "fullDate": "2026-01-31",
+      "time": "19:30",
+      "endTime": "23:00",
+      "location": "Lima",
+      "venue": "Westin Hotel - Le Paris Restaurant",
+      "address": "Calle Las Begonias 450, San Isidro",
+      "price": "$120.00",
+      "priceValue": 120,
+      "currency": "USD",
+      "image": "/images/event-le-paris.png",
+      "gallery": [
+        "/images/event-le-paris.png"
+      ],
+      "category": "gastronomy",
+      "tags": [
+        "gastronomy",
+        "dinner",
+        "wine",
+        "French",
+        "gourmet"
+      ],
+      "organizer": {
+        "name": "Le Paris Restaurant",
+        "logo": "/images/organizers/leparis-logo.png",
+        "phone": "+51 1 222 3333",
+        "email": "reservations@leparis.pe"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-003-premium",
+          "name": "Premium Menu",
+          "price": 180,
+          "description": "10-course premium menu with champagne",
+          "available": 30,
+          "maxPerOrder": 4
+        },
+        {
+          "id": "tkt-003-classic",
+          "name": "Classic Menu",
+          "price": 120,
+          "description": "7-course classic menu with wine pairing",
+          "available": 80,
+          "maxPerOrder": 6
+        },
+        {
+          "id": "tkt-003-wine",
+          "name": "Wine Tasting Only",
+          "price": 60,
+          "description": "Wine tasting with French tapas",
+          "available": 40,
+          "maxPerOrder": 4
+        }
+      ],
+      "ageRestriction": "18+",
+      "dressCode": "Formal",
+      "status": "on-sale",
+      "isFeatured": true,
+      "availableTickets": 150,
+      "soldTickets": 89
+    },
+    {
+      "id": "evt-004",
+      "title": "Valentine's Plans | 2026",
+      "description": "The best Valentine's Day plan. Live music, romantic dinner, and surprises for couples.",
+      "date": "14 FEB",
+      "fullDate": "2026-02-14",
+      "time": "18:00",
+      "endTime": "00:00",
+      "location": "Lima",
+      "venue": "Exposition Park",
+      "address": "Av. 28 de Julio, Downtown Lima",
+      "price": "$10.00",
+      "priceValue": 10,
+      "originalPrice": "$15.00",
+      "currency": "USD",
+      "image": "/images/event-valentines.png",
+      "gallery": [
+        "/images/event-valentines.png"
+      ],
+      "category": "romantic",
+      "tags": [
+        "valentine's day",
+        "romantic",
+        "couples",
+        "love"
+      ],
+      "organizer": {
+        "name": "Love Events Peru",
+        "logo": "/images/organizers/love-logo.png",
+        "phone": "+51 999 111 222",
+        "email": "hello@loveevents.pe"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-004-couple",
+          "name": "Romantic Couple",
+          "price": 25,
+          "description": "Entry for 2 people with dinner included",
+          "available": 200,
+          "maxPerOrder": 2
+        },
+        {
+          "id": "tkt-004-individual",
+          "name": "Individual",
+          "price": 10,
+          "description": "Individual entry to the event",
+          "available": 300,
+          "maxPerOrder": 4
+        }
+      ],
+      "ageRestriction": "All ages",
+      "status": "on-sale",
+      "isFeatured": true,
+      "availableTickets": 500,
+      "soldTickets": 123
+    },
+    {
+      "id": "evt-005",
+      "title": "Montecarlo Circus Huanuco 2026",
+      "description": "The most spectacular circus in South America arrives in Huanuco. Acrobats, clowns, animals, and lots of family fun.",
+      "date": "28 JAN",
+      "fullDate": "2026-01-28",
+      "time": "16:00",
+      "endTime": "19:00",
+      "location": "Huanuco",
+      "venue": "Heraclio Tapia Stadium",
+      "address": "Jr. General Prado 850, Huanuco",
+      "price": "$20.00",
+      "priceValue": 20,
+      "currency": "USD",
+      "image": "/images/event-circus.png",
+      "gallery": [
+        "/images/event-circus.png"
+      ],
+      "category": "family",
+      "tags": [
+        "circus",
+        "family",
+        "kids",
+        "show"
+      ],
+      "organizer": {
+        "name": "Montecarlo Circus",
+        "logo": "/images/organizers/montecarlo-logo.png",
+        "phone": "+51 962 333 444",
+        "email": "tickets@montecarlo-circus.com"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-005-family",
+          "name": "Family Pack",
+          "price": 60,
+          "description": "4 tickets (2 adults + 2 kids) with snack combo",
+          "available": 500,
+          "maxPerOrder": 3
+        },
+        {
+          "id": "tkt-005-preferred",
+          "name": "Preferred",
+          "price": 35,
+          "description": "Preferred seating with the best view",
+          "available": 800,
+          "maxPerOrder": 8
+        },
+        {
+          "id": "tkt-005-general",
+          "name": "General Admission",
+          "price": 20,
+          "description": "General admission to the show",
+          "available": 1700,
+          "maxPerOrder": 10
+        }
+      ],
+      "ageRestriction": "All ages",
+      "status": "on-sale",
+      "isFeatured": false,
+      "availableTickets": 3000,
+      "soldTickets": 1456
+    },
+    {
+      "id": "evt-006",
+      "title": "Peruvian Rock Festival Vol. 02",
+      "description": "The biggest rock festival in Peru. 10 bands, 2 stages, food trucks, and camping area.",
+      "date": "15 FEB",
+      "fullDate": "2026-02-15",
+      "time": "14:00",
+      "endTime": "02:00",
+      "location": "Trujillo",
+      "venue": "Mansiche Stadium",
+      "address": "Av. America Sur, Trujillo",
+      "price": "$50.00",
+      "priceValue": 50,
+      "currency": "USD",
+      "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&h=300&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&h=300&fit=crop"
+      ],
+      "category": "concerts",
+      "tags": [
+        "rock",
+        "festival",
+        "music",
+        "bands"
+      ],
+      "organizer": {
+        "name": "Rock Peru Productions",
+        "logo": "/images/organizers/rockperu-logo.png",
+        "phone": "+51 944 555 666",
+        "email": "info@rockperufest.com"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-006-vip",
+          "name": "VIP Zone",
+          "price": 120,
+          "description": "VIP access with preferred viewing and open bar",
+          "available": 300,
+          "maxPerOrder": 4
+        },
+        {
+          "id": "tkt-006-camping",
+          "name": "Camping Pass",
+          "price": 80,
+          "description": "General admission + camping zone access",
+          "available": 500,
+          "maxPerOrder": 4
+        },
+        {
+          "id": "tkt-006-general",
+          "name": "General Admission",
+          "price": 50,
+          "description": "General admission to the festival",
+          "available": 4200,
+          "maxPerOrder": 8
+        }
+      ],
+      "ageRestriction": "18+",
+      "status": "on-sale",
+      "isFeatured": false,
+      "availableTickets": 5000,
+      "soldTickets": 2340
+    },
+    {
+      "id": "evt-007",
+      "title": "SUU RABANAL: THE LAW Tour",
+      "description": "Suu Rabanal presents her new album 'The Law' in an intimate and unforgettable concert.",
+      "date": "08 FEB",
+      "fullDate": "2026-02-08",
+      "time": "21:00",
+      "endTime": "00:00",
+      "location": "Callao",
+      "venue": "Maria Angola Convention Center",
+      "address": "Av. La Paz 610, Callao",
+      "price": "$50.00",
+      "priceValue": 50,
+      "currency": "USD",
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop"
+      ],
+      "category": "concerts",
+      "tags": [
+        "rock",
+        "pop",
+        "concert",
+        "tour"
+      ],
+      "organizer": {
+        "name": "Suu Management",
+        "logo": "/images/organizers/suu-logo.png",
+        "phone": "+51 955 777 888",
+        "email": "tour@suurabanal.com"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-007-meet",
+          "name": "Meet & Greet",
+          "price": 150,
+          "description": "Meet Suu, signed photo, and VIP access",
+          "available": 50,
+          "maxPerOrder": 2
+        },
+        {
+          "id": "tkt-007-orchestra",
+          "name": "Numbered Orchestra",
+          "price": 70,
+          "description": "Numbered orchestra seating",
+          "available": 400,
+          "maxPerOrder": 6
+        },
+        {
+          "id": "tkt-007-general",
+          "name": "General Floor",
+          "price": 50,
+          "description": "General floor admission",
+          "available": 750,
+          "maxPerOrder": 8
+        }
+      ],
+      "ageRestriction": "All ages",
+      "status": "on-sale",
+      "isFeatured": false,
+      "availableTickets": 1200,
+      "soldTickets": 678
+    },
+    {
+      "id": "evt-008",
+      "title": "SALSA CUMBIA - Yaipen Brothers",
+      "description": "The best Peruvian salsa and cumbia in a night of party and dancing with the Yaipen Brothers.",
+      "date": "22 FEB",
+      "fullDate": "2026-02-22",
+      "time": "20:00",
+      "endTime": "03:00",
+      "location": "Chiclayo",
+      "venue": "Gran Chimu Coliseum",
+      "address": "Av. Salaverry 123, Chiclayo",
+      "price": "$30.00",
+      "priceValue": 30,
+      "currency": "USD",
+      "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop",
+      "gallery": [
+        "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop"
+      ],
+      "category": "concerts",
+      "tags": [
+        "salsa",
+        "cumbia",
+        "dance",
+        "tropical"
+      ],
+      "organizer": {
+        "name": "Northern Productions",
+        "logo": "/images/organizers/norte-logo.png",
+        "phone": "+51 974 111 222",
+        "email": "tickets@northernprod.pe"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-008-vip",
+          "name": "VIP with Table",
+          "price": 80,
+          "description": "VIP table for 6 people with bottle service",
+          "available": 100,
+          "maxPerOrder": 3
+        },
+        {
+          "id": "tkt-008-general",
+          "name": "General Admission",
+          "price": 30,
+          "description": "General admission to the event",
+          "available": 2400,
+          "maxPerOrder": 10
+        }
+      ],
+      "ageRestriction": "18+",
+      "status": "on-sale",
+      "isFeatured": false,
+      "availableTickets": 2500,
+      "soldTickets": 890
+    },
+    {
+      "id": "evt-009",
+      "title": "Comedy Night - Best Stand Ups",
+      "description": "A night of laughter with the best comedians from Peru. Top-tier stand-up comedy.",
+      "date": "05 FEB",
+      "fullDate": "2026-02-05",
+      "time": "20:30",
+      "endTime": "23:30",
+      "location": "Lima",
+      "venue": "La Plaza Theater",
+      "address": "Larcomar, Miraflores",
+      "price": "$35.00",
+      "priceValue": 35,
+      "currency": "USD",
+      "image": "https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=400&h=300&fit=crop",
+      "gallery": [],
+      "category": "comedy",
+      "tags": [
+        "comedy",
+        "stand up",
+        "laughter",
+        "show"
+      ],
+      "organizer": {
+        "name": "Comedy Club Lima",
+        "logo": "/images/organizers/comedy-logo.png",
+        "phone": "+51 1 444 5555",
+        "email": "tickets@comedyclublima.pe"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-009-vip",
+          "name": "VIP Table",
+          "price": 60,
+          "description": "Preferred table for 4 people",
+          "available": 40,
+          "maxPerOrder": 2
+        },
+        {
+          "id": "tkt-009-general",
+          "name": "General Admission",
+          "price": 35,
+          "description": "Numbered general seating",
+          "available": 200,
+          "maxPerOrder": 6
+        }
+      ],
+      "ageRestriction": "18+",
+      "status": "on-sale",
+      "isFeatured": false,
+      "availableTickets": 240,
+      "soldTickets": 156
+    },
+    {
+      "id": "evt-010",
+      "title": "Mistura Food Festival 2026",
+      "description": "The largest food festival in Latin America. Over 100 stands, guest chefs, and traditional cooks.",
+      "date": "20 MAR",
+      "fullDate": "2026-03-20",
+      "time": "10:00",
+      "endTime": "22:00",
+      "location": "Lima",
+      "venue": "Costa Verde",
+      "address": "Beach Circuit, Miraflores",
+      "price": "$15.00",
+      "priceValue": 15,
+      "currency": "USD",
+      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop",
+      "gallery": [],
+      "category": "gastronomy",
+      "tags": [
+        "gastronomy",
+        "food",
+        "festival",
+        "Peruvian"
+      ],
+      "organizer": {
+        "name": "APEGA",
+        "logo": "/images/organizers/apega-logo.png",
+        "phone": "+51 1 222 1234",
+        "email": "mistura@apega.pe"
+      },
+      "ticketTypes": [
+        {
+          "id": "tkt-010-full",
+          "name": "Full Pass",
+          "price": 45,
+          "description": "Access for all festival days",
+          "available": 5000,
+          "maxPerOrder": 8
+        },
+        {
+          "id": "tkt-010-day",
+          "name": "Day Pass",
+          "price": 15,
+          "description": "Valid entry for one day",
+          "available": 15000,
+          "maxPerOrder": 10
+        }
+      ],
+      "ageRestriction": "All ages",
+      "status": "coming-soon",
+      "isFeatured": true,
+      "availableTickets": 20000,
+      "soldTickets": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-concerts",
+      "name": "Concerts",
+      "slug": "concerts",
+      "icon": "🎵",
+      "color": "#8B5CF6",
+      "description": "Live music, tours, and festivals"
+    },
+    {
+      "id": "cat-electronic",
+      "name": "Electronic",
+      "slug": "electronic",
+      "icon": "🎧",
+      "color": "#06B6D4",
+      "description": "Electronic parties, raves, and DJs"
+    },
+    {
+      "id": "cat-gastronomy",
+      "name": "Gastronomy",
+      "slug": "gastronomy",
+      "icon": "🍽️",
+      "color": "#F59E0B",
+      "description": "Culinary experiences and special dinners"
+    },
+    {
+      "id": "cat-family",
+      "name": "Family",
+      "slug": "family",
+      "icon": "👨‍👩‍👧‍👦",
+      "color": "#10B981",
+      "description": "Circus, parks, and activities for the whole family"
+    },
+    {
+      "id": "cat-romantic",
+      "name": "Romantic",
+      "slug": "romantic",
+      "icon": "💕",
+      "color": "#EC4899",
+      "description": "Special plans for couples"
+    },
+    {
+      "id": "cat-comedy",
+      "name": "Comedy",
+      "slug": "comedy",
+      "icon": "😂",
+      "color": "#EF4444",
+      "description": "Stand-up comedy and humor shows"
+    },
+    {
+      "id": "cat-sports",
+      "name": "Sports",
+      "slug": "sports",
+      "icon": "⚽",
+      "color": "#22C55E",
+      "description": "Matches, competitions, and sporting events"
+    },
+    {
+      "id": "cat-theater",
+      "name": "Theater",
+      "slug": "theater",
+      "icon": "🎭",
+      "color": "#A855F7",
+      "description": "Theater plays, musicals, and performances"
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc-lima",
+      "name": "Lima",
+      "region": "Lima",
+      "country": "Peru",
+      "eventCount": 6
+    },
+    {
+      "id": "loc-trujillo",
+      "name": "Trujillo",
+      "region": "La Libertad",
+      "country": "Peru",
+      "eventCount": 1
+    },
+    {
+      "id": "loc-huanuco",
+      "name": "Huanuco",
+      "region": "Huanuco",
+      "country": "Peru",
+      "eventCount": 1
+    },
+    {
+      "id": "loc-callao",
+      "name": "Callao",
+      "region": "Callao",
+      "country": "Peru",
+      "eventCount": 1
+    },
+    {
+      "id": "loc-chiclayo",
+      "name": "Chiclayo",
+      "region": "Lambayeque",
+      "country": "Peru",
+      "eventCount": 1
+    }
+  ],
+  "users": [
+    {
+      "id": "user-001",
+      "email": "demo@ticketapp.pe",
+      "password": "demo123",
+      "firstName": "Demo",
+      "lastName": "User",
+      "phone": "+51 999 000 111",
+      "avatar": "",
+      "role": "user",
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "user-002",
+      "email": "admin@ticketapp.pe",
+      "password": "admin123",
+      "firstName": "System",
+      "lastName": "Admin",
+      "phone": "+51 999 000 222",
+      "avatar": "",
+      "role": "admin",
+      "createdAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-001",
+      "userId": "user-001",
+      "eventId": "evt-001",
+      "tickets": [
+        {
+          "ticketTypeId": "tkt-001-orchestra",
+          "quantity": 2,
+          "unitPrice": 150,
+          "subtotal": 300
+        }
+      ],
+      "subtotal": 300,
+      "serviceFee": 18,
+      "total": 318,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "credit-card",
+      "cardLast4": "4242",
+      "createdAt": "2026-01-15T14:30:00Z",
+      "confirmationCode": "SHDY-2026-001234"
+    },
+    {
+      "id": "order-002",
+      "userId": "user-001",
+      "eventId": "evt-002",
+      "tickets": [
+        {
+          "ticketTypeId": "tkt-002-general",
+          "quantity": 4,
+          "unitPrice": 80,
+          "subtotal": 320
+        }
+      ],
+      "subtotal": 320,
+      "serviceFee": 19.20,
+      "total": 339.20,
+      "currency": "USD",
+      "status": "completed",
+      "paymentMethod": "credit-card",
+      "cardLast4": "1234",
+      "createdAt": "2026-01-20T18:45:00Z",
+      "confirmationCode": "HOUS-2026-005678"
+    }
+  ],
+  "cart": {
+    "items": [],
+    "subtotal": 0,
+    "serviceFee": 0,
+    "total": 0
+  },
+  "promotions": [
+    {
+      "id": "promo-001",
+      "code": "WELCOME10",
+      "description": "10% off your first purchase",
+      "discountType": "percentage",
+      "discountValue": 10,
+      "minPurchase": 30,
+      "maxUses": 1000,
+      "usedCount": 234,
+      "validFrom": "2026-01-01",
+      "validUntil": "2026-03-31",
+      "isActive": true
+    },
+    {
+      "id": "promo-002",
+      "code": "SUMMER2026",
+      "description": "$15 off orders over $100",
+      "discountType": "fixed",
+      "discountValue": 15,
+      "minPurchase": 100,
+      "maxUses": 500,
+      "usedCount": 89,
+      "validFrom": "2026-01-15",
+      "validUntil": "2026-02-28",
+      "isActive": true
+    }
+  ],
+  "appSettings": {
+    "serviceFeePercentage": 6,
+    "currency": "USD",
+    "supportEmail": "support@ticketapp.pe",
+    "supportPhone": "+51 1 700 8000",
+    "socialMedia": {
+      "facebook": "https://facebook.com/ticketapp.pe",
+      "instagram": "https://instagram.com/ticketapp_pe",
+      "twitter": "https://twitter.com/ticketapp_pe"
+    },
+    "companyName": "TicketApp Peru",
+    "companyAddress": "Av. Javier Prado Este 4200, Surco, Lima",
+    "termsUrl": "/terms",
+    "privacyUrl": "/privacy"
+  }
+}

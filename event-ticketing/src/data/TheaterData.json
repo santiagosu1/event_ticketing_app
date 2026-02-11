@@ -1,0 +1,190 @@
+{
+  "events": [
+    {
+      "theater_id": "THR-VAN-001",
+      "event_info": {
+        "title": "Winter Jazz Festival",
+        "date_iso": "2026-02-20",
+        "time": "19:30",
+        "poster_image": "images/events/jazz_van.jpg",
+        "description": "Una noche mágica con lo mejor del jazz local e internacional."
+      },
+      "venue_info": {
+        "name": "Vancouver Playhouse",
+        "address": "777 Hamilton St",
+        "city": "Vancouver",
+        "country": "Canada",
+        "contact": {
+          "phone": "+1-604-555-0101",
+          "email": "info@vancouverplayhouse.ca"
+        }
+      },
+      "event_settings": {
+        "max_tickets_per_user": 4,
+        "currency": "CAD",
+        "sales_status": "open"
+      },
+      "capacity_summary": {
+        "total_capacity": 600,
+        "total_sold": 420,
+        "total_available": 180
+      },
+      "zones": [
+        {
+          "id": "van_vip",
+          "name": "VIP Stalls",
+          "description": "Filas 1-5, Vista Central",
+          "price": 120.00,
+          "available_seats": 10,
+          "color_code": "#FFD700"
+        },
+        {
+          "id": "van_general",
+          "name": "General Stalls",
+          "description": "Planta principal",
+          "price": 75.00,
+          "available_seats": 100,
+          "color_code": "#00DCA8"
+        },
+        {
+          "id": "van_mezz",
+          "name": "Mezzanine",
+          "description": "Segundo nivel",
+          "price": 45.00,
+          "available_seats": 70,
+          "color_code": "#A0A0A0"
+        }
+      ],
+      "amenities": {
+        "parking": true,
+        "wheelchair_access": true,
+        "cafeteria": true,
+        "air_conditioning": true
+      }
+    },
+    {
+      "theater_id": "THR-TOR-002",
+      "event_info": {
+        "title": "Romeo & Juliet: Modern Era",
+        "date_iso": "2026-03-15",
+        "time": "20:00",
+        "poster_image": "images/events/romeo_tor.jpg",
+        "description": "La clásica historia de amor adaptada a los tiempos modernos."
+      },
+      "venue_info": {
+        "name": "Royal Toronto Theatre",
+        "address": "45 Queen St W",
+        "city": "Toronto",
+        "country": "Canada",
+        "contact": {
+          "phone": "+1-416-555-0202",
+          "email": "contact@royaltorontotheatre.ca"
+        }
+      },
+      "event_settings": {
+        "max_tickets_per_user": 6,
+        "currency": "CAD",
+        "sales_status": "open"
+      },
+      "capacity_summary": {
+        "total_capacity": 1200,
+        "total_sold": 860,
+        "total_available": 340
+      },
+      "zones": [
+        {
+          "id": "tor_vip",
+          "name": "Orchestra VIP",
+          "description": "Mejor vista garantizada",
+          "price": 150.00,
+          "available_seats": 20,
+          "color_code": "#FFB300"
+        },
+        {
+          "id": "tor_main",
+          "name": "Main Floor",
+          "description": "Orquesta y platea",
+          "price": 90.00,
+          "available_seats": 200,
+          "color_code": "#33CC99"
+        },
+        {
+          "id": "tor_balcony",
+          "name": "Balcony",
+          "description": "Asientos elevados",
+          "price": 55.00,
+          "available_seats": 120,
+          "color_code": "#B0B0B0"
+        }
+      ],
+      "amenities": {
+        "parking": false,
+        "wheelchair_access": true,
+        "cafeteria": true,
+        "air_conditioning": true
+      }
+    },
+    {
+      "theater_id": "THR-MTL-003",
+      "event_info": {
+        "title": "Cirque de la Lune",
+        "date_iso": "2026-04-10",
+        "time": "18:00",
+        "poster_image": "images/events/cirque_mtl.jpg",
+        "description": "Acrobacias y magia visual para toda la familia."
+      },
+      "venue_info": {
+        "name": "Montreal Arts Centre",
+        "address": "210 Saint-Catherine St",
+        "city": "Montreal",
+        "country": "Canada",
+        "contact": {
+          "phone": "+1-514-555-0303",
+          "email": "hello@montrealarts.ca"
+        }
+      },
+      "event_settings": {
+        "max_tickets_per_user": 4,
+        "currency": "CAD",
+        "sales_status": "limited"
+      },
+      "capacity_summary": {
+        "total_capacity": 800,
+        "total_sold": 640,
+        "total_available": 160
+      },
+      "zones": [
+        {
+          "id": "mtl_vip",
+          "name": "Front Orchestra",
+          "description": "Primeras filas",
+          "price": 130.00,
+          "available_seats": 5,
+          "color_code": "#FFD54F"
+        },
+        {
+          "id": "mtl_standard",
+          "name": "Standard",
+          "description": "Área principal",
+          "price": 70.00,
+          "available_seats": 80,
+          "color_code": "#4DB6AC"
+        },
+        {
+          "id": "mtl_upper",
+          "name": "Upper Tier",
+          "description": "Vista superior",
+          "price": 40.00,
+          "available_seats": 75,
+          "color_code": "#9E9E9E"
+        }
+      ],
+      "amenities": {
+        "parking": true,
+        "wheelchair_access": true,
+        "cafeteria": false,
+        "air_conditioning": true
+      }
+    }
+  ]
+}
