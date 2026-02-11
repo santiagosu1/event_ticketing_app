@@ -438,7 +438,6 @@ footer {
     color: #5d6d7e;
 }
 
-/* Botones de + y - */
 .qty-selector {
     display: flex;
     align-items: center;
@@ -575,4 +574,129 @@ footer {
     .navFooSocial ul { justify-content: center; }
     .btnHelp button { width: 100%; }
     .footerSecond { justify-content: center; padding: 20px; text-align: center; }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; 
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-container {
+    background: #fff;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    animation: slideUp 0.3s ease;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.modal-header h3 {
+    font-size: 20px;
+    color: #0f1c2e;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #5d6d7e;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #dfe4ea;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #00dca8;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.modal-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-secondary {
+    background: #f1f2f6;
+    color: #333;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.success-container {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.success-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.success-container h3 {
+    margin-bottom: 10px;
+    color: #00dca8;
+}
+
+.success-container p {
+    color: #5d6d7e;
+    margin-bottom: 25px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
