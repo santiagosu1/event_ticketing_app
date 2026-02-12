@@ -57,7 +57,7 @@ export default function Home() {
 
                 {/* If filtering, show a "Results" header or similar? */}
                 {isFiltering && (
-                    <div className="filter-status" style={{ padding: '20px', color: 'white' }}>
+                    <div className="filter-status" style={{ padding: '20px', color: '#808080' }}>
                         <h2>
                             {searchTerm ? `Results for "${searchTerm}"` : ''}
                             {searchTerm && selectedCategory ? ' in ' : ''}
@@ -67,8 +67,8 @@ export default function Home() {
                             onClick={() => setSelectedCategory(null)}
                             style={{
                                 background: 'transparent',
-                                border: '1px solid white',
-                                color: 'white',
+                                border: '1px solid #808080',
+                                color: '#808080',
                                 padding: '5px 10px',
                                 marginTop: '10px',
                                 cursor: 'pointer',

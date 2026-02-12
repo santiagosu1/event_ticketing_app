@@ -78,7 +78,9 @@ export default function MainLayout() {
 
         <nav className={`naviga ${isMenuOpen ? "show" : ""}`}>
           <ul>
-            <li className="nav-btn">Find My Ticket</li>
+            <li className="nav-btn">
+              <Link to="/my-tickets" style={{ textDecoration: 'none', color: 'inherit' }}>Find My Ticket</Link>
+            </li>
 
             {/* ✅ si NO hay user -> mostrar login/signup */}
             {!user && (
@@ -151,6 +153,9 @@ export default function MainLayout() {
 
           <div className="fooAbout">
             <h3>About Us</h3>
+            <div>
+              <Link to="/my-tickets" style={{ textDecoration: 'none', color: 'inherit' }}>Find My Ticket</Link>
+            </div>
             <div>About Us</div>
             <div>FAQ</div>
           </div>

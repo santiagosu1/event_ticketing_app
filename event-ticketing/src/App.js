@@ -1,9 +1,11 @@
-import {Route,Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import MainLayout from './Layouts/MainLayout';
 import NoContent from './Pages/NoContent';
 import CheckOut from './Pages/CheckOut';
+
+import MyTickets from './Pages/MyTickets';
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/checkout" element={<CheckOut />} />
         <Route path="/checkout/:id" element={<CheckOut />} />
+        <Route path="/my-tickets" element={<MyTickets />} />
       </Route>
       <Route path="*" element={<NoContent />} />
     </Routes>
