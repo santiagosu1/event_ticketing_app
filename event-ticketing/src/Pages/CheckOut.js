@@ -65,8 +65,48 @@ export default function CheckOut() {
 
   const handlePaymentSubmit = (e) => {
     e.preventDefault();
-    setShowPaymentModal(false);
-    setShowSuccessModal(true);
+
+    // Crear objeto de compra
+    const purchase = {
+      id: Date.now(),
+      userId: user.email, // Relacionamos con el usuario
+      eventId: event.id,
+      eventTitle: event.title,
+      eventDate: event.date,
+      eventTime: event.time,
+      eventVenue: event.venue,
+      eventImage: event.image,
+      currency: event.currency,
+      purchaseDate: new Date().toISOString(),
+      items: event.ticketTypes
+        .filter(t => ticketQuantities[t.id] > 0)
+        .map(t => ({
+          id: t.id,
+          name: t.name,
+          qty: ticketQuantities[t.id],
+          price: t.price
+        })),
+      total: calculateTotal()
+    };
+
+    // Guardar en Base de Datos real (JSON Server)
+    fetch("http://localhost:3001/purchases", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(purchase),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        // Solo cerrar modal si se guardó correctamente
+        setShowPaymentModal(false);
+        setShowSuccessModal(true);
+      })
+      .catch((error) => {
+        console.error("Error saving purchase:", error);
+        alert("Failed to save purchase. Please try again.");
+      });
   };
 
   if (!event) return <div className="page-container">Loading event...</div>;
