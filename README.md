@@ -8,7 +8,7 @@
 
 ## 📸 Screenshots
 
-![Home Page](./public/assets/home.png)
+![Home Page](./event-ticketing/public/assets/home.png)
 
 ---
 
