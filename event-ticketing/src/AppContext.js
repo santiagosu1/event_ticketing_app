@@ -6,7 +6,6 @@ const USER_KEY = "eventhub_user_v1";
 
 export function AppContextProvider({ children }) {
 
-  // cargar usuario si ya estaba logueado
   const [user, setUser] = useState(() => {
     try {
       const saved = localStorage.getItem(USER_KEY);
@@ -16,7 +15,6 @@ export function AppContextProvider({ children }) {
     }
   });
 
-  // login ahora recibe OBJETO usuario, no solo email
   const login = (userObj) => {
     setUser(userObj);
     localStorage.setItem(USER_KEY, JSON.stringify(userObj));
