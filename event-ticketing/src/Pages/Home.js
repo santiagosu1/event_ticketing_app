@@ -119,13 +119,62 @@ export default function Home() {
                 {/* Hero Carousel */}
                 <HeroCarousel slides={heroSlides} />
 
-                {/* Planes Imperdibles Section */}
-                <EventsSection
-                    subtitle="PLANES"
-                    title="IMPERDIBLES"
-                    events={planesImperdibles}
-                    carousel={true}
-                />
+                {/* Categories Section - Moved to top for easier filtering if desired, or keep at bottom? 
+                    User didn't specify position, but for filtering UX it's usually better at top.
+                    However, let's keep it and see. The user said "also allow filtering".
+                    I'll add the Categories component here as well or just pass props to the existing one.
+                    Wait, if I hide the carousel, I should probably show categories so they can unselect.
+                */}
+
+                {/* If filtering, show a "Results" header or similar? */}
+                {isFiltering && (
+                    <div className="filter-status" style={{ padding: '20px', color: '#808080' }}>
+                        <h2>
+                            {searchTerm ? `Results for "${searchTerm}"` : ''}
+                            {searchTerm && selectedCategory ? ' in ' : ''}
+                            {selectedCategory ? `${selectedCategory}` : ''}
+                        </h2>
+                        <button
+                            onClick={() => setSelectedCategory(null)}
+                            style={{
+                                background: 'transparent',
+                                border: '1px solid #808080',
+                                color: '#808080',
+                                padding: '5px 10px',
+                                marginTop: '10px',
+                                cursor: 'pointer',
+                                display: selectedCategory ? 'inline-block' : 'none'
+                            }}
+                        >
+                            Clear Category
+                        </button>
+                    </div>
+                )}
+
+                {/* Can't Miss Plans Section */}
+                {(filteredCantMiss.length > 0) && (
+                    <EventsSection
+                        subtitle={isFiltering ? "RESULTS" : "PLANS"}
+                        title={isFiltering ? "MATCHING EVENTS" : "CAN'T MISS"}
+                        events={filteredCantMiss}
+                        carousel={!isFiltering} // Disable carousel mode when filtering to show grid
+                        paged={isFiltering}     // Enable pagination/grid when filtering
+                        sortByDate={true}
+                        overlayNav={false}
+                    />
+                )}
+
+                {/* Recommended Events Section */}
+                {(filteredRecommended.length > 0) && (
+                    <EventsSection
+                        subtitle={isFiltering ? "MORE" : "EVENTS YOU MIGHT"}
+                        title={isFiltering ? "RESULTS" : "LIKE"}
+                        events={filteredRecommended}
+                        note={!isFiltering ? "We suggest events based on your previous purchases and searches." : ""}
+                        carousel={false}
+                        paged={isFiltering} // Consistent grid view when filtering
+                    />
+                )}
 
                 {/* Eventos Recomendados Section */}
                 <EventsSection

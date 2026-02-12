@@ -63,14 +63,27 @@ export default function Categories() {
                 ))}
             </div>
 
-            <div className="categories-show-more">
-                <button className="show-more-btn">
-                    Mostrar más
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-            </div>
+
+
+            <style jsx>{`
+                .category-item {
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+                .category-item:hover {
+                    transform: translateY(-5px);
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+                .category-item.selected {
+                   
+                    color: white;
+                    transform: scale(1.05);
+                    
+                }
+                .category-item.selected svg {
+                    fill: white;
+                }
+            `}</style>
         </section>
     );
 }

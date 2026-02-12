@@ -1,9 +1,11 @@
-import {Route,Routes} from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 // import About from './Pages/About';
 import Login from './Pages/Login';
 import MainLayout from './Layouts/MainLayout';
 import NoContent from './Pages/NoContent';
+
+import MyTickets from './Pages/MyTickets';
 
 export default function App() {
   return (
