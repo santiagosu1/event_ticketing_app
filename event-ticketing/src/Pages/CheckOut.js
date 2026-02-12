@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import { useParams, useNavigate } from 'react-router-dom'; 
 import eventsData from '../data/events.json';
 
@@ -18,7 +19,7 @@ export default function CheckOut() {
             if (foundEvent) {
                 setEvent(foundEvent);
             } else {
-                alert("Evento no encontrado");
+                alert("Event not found");
                 navigate('/');
             }
         }
@@ -46,7 +47,7 @@ export default function CheckOut() {
         setShowSuccessModal(true);
     };
 
-    if (!event) return <div className="page-container">Cargando evento...</div>;
+    if (!event) return <div className="page-container">Loading event...</div>;
 
     return (
         <>
@@ -75,7 +76,7 @@ export default function CheckOut() {
                 <aside className="sidebar">
                     <div className="card booking-card">
                         <div className="card-header">
-                            <h3>Fecha y Hora</h3>
+                            <h3>Date and Time</h3>
                         </div>
                         <div className="card-body">
                             <div className="date-option selected">
@@ -91,12 +92,12 @@ export default function CheckOut() {
 
                     <div className="card tickets-card">
                         <div className="card-header">
-                            <h3>Entradas</h3>
-                            <button type="button" className="link-action">¿Tienes un código?</button>
+                            <h3>Tickets</h3>
+                            <button type="button" className="link-action">Do you have a code?</button>
                         </div>
                         
                         <div className="card-search-container">
-                            <input type="text" className="card-search-input" placeholder="Buscar entradas"/>
+                            <input type="text" className="card-search-input" placeholder="Search tickets"/>
                             <span className="card-search-icon">🔍</span>
                         </div>
 
@@ -140,7 +141,7 @@ export default function CheckOut() {
                     onClick={() => setShowPaymentModal(true)}
                     disabled={calculateTotal() === 0} 
                 >
-                    Pagar {event.currency === 'USD' ? '$' : 'S/'} {calculateTotal().toFixed(2)}
+                    Pay {event.currency === 'USD' ? '$' : 'S/'} {calculateTotal().toFixed(2)}
                 </button>
             </div>
 
@@ -148,22 +149,22 @@ export default function CheckOut() {
                 <div className="modal-overlay">
                     <div className="modal-container">
                         <div className="modal-header">
-                            <h3>Finalizar Compra</h3>
+                            <h3>Checkout</h3>
                             <button className="close-btn" onClick={() => setShowPaymentModal(false)}>×</button>
                         </div>
                         <form onSubmit={handlePaymentSubmit}>
                             <div className="form-group">
-                                <label>Nombre completo</label>
-                                <input type="text" placeholder="Ej. Juan Pérez" required />
+                                <label>Full Name</label>
+                                <input type="text" placeholder="e.g. John Doe" required />
                             </div>
 
                             <div className="form-group">
-                                <label>Número de tarjeta</label>
+                                <label>Card Number</label>
                                 <input type="text" placeholder="0000 0000 0000 0000" required />
                             </div>
                             <div className="form-row">
                                 <div className="form-group">
-                                    <label>Expira</label>
+                                    <label>Expires</label>
                                     <input type="text" placeholder="MM/YY" required />
                                 </div>
                                 <div className="form-group">
@@ -173,9 +174,9 @@ export default function CheckOut() {
                             </div>
                             
                             <div className="modal-footer">
-                                <button type="button" className="btn-secondary" onClick={() => setShowPaymentModal(false)}>Cancelar</button>
+                                <button type="button" className="btn-secondary" onClick={() => setShowPaymentModal(false)}>Cancel</button>
                                 <button type="submit" className="btn-primary">
-                                    Confirmar {event.currency === 'USD' ? '$' : 'S/'} {calculateTotal().toFixed(2)}
+                                    Confirm {event.currency === 'USD' ? '$' : 'S/'} {calculateTotal().toFixed(2)}
                                 </button>
                             </div>
                         </form>
@@ -187,9 +188,11 @@ export default function CheckOut() {
                 <div className="modal-overlay">
                     <div className="modal-container success-container">
                         <div className="success-icon">🎉</div>
-                        <h3>¡Pago Exitoso!</h3>
-                        <p>Disfruta de <strong>{event.title}</strong>.</p>
-                        <button className="btn-primary" onClick={() => setShowSuccessModal(false)}>Entendido</button>
+                        <h3>Payment Successful!</h3>
+                        <p>Enjoy <strong>{event.title}</strong>.</p>
+                        <Link to="/">
+                            <button className="btn-primary" onClick={() => setShowSuccessModal(false)}>Got it</button>
+                        </Link>
                     </div>
                 </div>
             )}

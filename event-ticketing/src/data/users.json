@@ -1,0 +1,16 @@
+[
+  {
+    "id": "user-001",
+    "email": "santisu05@gmail.com",
+    "password": "changeme",
+    "firstName": "Santiago",
+    "lastName": "Suarez"
+  },
+  {
+    "id": "user-002",
+    "email": "admin@ticketapp.pe",
+    "password": "admin123",
+    "firstName": "System",
+    "lastName": "Admin"
+  }
+]
