@@ -68,14 +68,7 @@ export default function Categories({ selectedCategory, onCategorySelect = () => 
             </div>
 
 
-            <div className="categories-show-more">
-                <button className="show-more-btn">
-                    Show more
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-            </div>
+
             <style jsx>{`
                 .category-item {
                     cursor: pointer;
@@ -86,10 +79,10 @@ export default function Categories({ selectedCategory, onCategorySelect = () => 
                     background-color: rgba(255, 255, 255, 0.1);
                 }
                 .category-item.selected {
-                    background-color: var(--primary-color, #ff4d4d);
+                   
                     color: white;
                     transform: scale(1.05);
-                    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+                    
                 }
                 .category-item.selected svg {
                     fill: white;

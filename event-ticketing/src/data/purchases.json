@@ -1,0 +1,25 @@
+{
+  "purchases": [
+    {
+      "id": 1770877400858,
+      "userId": "santisu05@gmail.com",
+      "eventId": "evt-005",
+      "eventTitle": "Montecarlo Circus Huanuco 2026",
+      "eventDate": "28 JAN",
+      "eventTime": "16:00",
+      "eventVenue": "Heraclio Tapia Stadium",
+      "eventImage": "/images/event-circus.png",
+      "currency": "USD",
+      "purchaseDate": "2026-02-12T06:23:20.858Z",
+      "items": [
+        {
+          "id": "tkt-005-family",
+          "name": "Family Pack",
+          "qty": 1,
+          "price": 60
+        }
+      ],
+      "total": 60
+    }
+  ]
+}
