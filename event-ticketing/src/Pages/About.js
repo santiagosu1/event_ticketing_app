@@ -3,8 +3,8 @@ import React from 'react';
 export default function About() {
     return (
         <div style={{ padding: '40px', textAlign: 'center' }}>
-            <h1>Sobre Nosotros</h1>
-            <p>TicketHub - Tu plataforma de confianza para eventos</p>
+            <h1>About Us</h1>
+            <p>TicketHub - Your trusted platform for events</p>
         </div>
     );
 }

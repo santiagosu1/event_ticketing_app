@@ -1,7 +1,7 @@
 {
   "purchases": [
     {
-      "id": 1770877400858,
+      "id": "1770877400858",
       "userId": "santisu05@gmail.com",
       "eventId": "evt-005",
       "eventTitle": "Montecarlo Circus Huanuco 2026",
@@ -20,6 +20,81 @@
         }
       ],
       "total": 60
+    },
+    {
+      "id": "1770883474787",
+      "userId": "santisu05@gmail.com",
+      "eventId": "evt-002",
+      "eventTitle": "THE HOUSE - Electronic Music Event",
+      "eventDate": "29 JAN",
+      "eventTime": "22:00",
+      "eventVenue": "Peru Arena",
+      "eventImage": "/images/event-the-house.png",
+      "currency": "USD",
+      "purchaseDate": "2026-02-12T08:04:34.787Z",
+      "items": [
+        {
+          "id": "tkt-002-vip",
+          "name": "VIP Lounge",
+          "qty": 1,
+          "price": 180
+        }
+      ],
+      "total": 180
+    },
+    {
+      "id": "1770883560576",
+      "userId": "santisu05@gmail.com",
+      "eventId": "evt-003",
+      "eventTitle": "Le Paris - Elegant Dinner Experience",
+      "eventDate": "31 JAN",
+      "eventTime": "19:30",
+      "eventVenue": "Westin Hotel - Le Paris Restaurant",
+      "eventImage": "/images/event-le-paris.png",
+      "currency": "USD",
+      "purchaseDate": "2026-02-12T08:06:00.576Z",
+      "items": [
+        {
+          "id": "tkt-003-premium",
+          "name": "Premium Menu",
+          "qty": 1,
+          "price": 180
+        },
+        {
+          "id": "tkt-003-classic",
+          "name": "Classic Menu",
+          "qty": 2,
+          "price": 120
+        },
+        {
+          "id": "tkt-003-wine",
+          "name": "Wine Tasting Only",
+          "qty": 1,
+          "price": 60
+        }
+      ],
+      "total": 480
+    },
+    {
+      "id": 1770921986472,
+      "userId": "santisu05@gmail.com",
+      "eventId": "evt-004",
+      "eventTitle": "Valentine's Plans | 2026",
+      "eventDate": "14 FEB",
+      "eventTime": "18:00",
+      "eventVenue": "Exposition Park",
+      "eventImage": "/images/event-valentines.png",
+      "currency": "USD",
+      "purchaseDate": "2026-02-12T18:46:26.472Z",
+      "items": [
+        {
+          "id": "tkt-004-couple",
+          "name": "Romantic Couple",
+          "qty": 1,
+          "price": 25
+        }
+      ],
+      "total": 25
     }
   ]
 }

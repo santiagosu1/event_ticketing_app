@@ -89,7 +89,7 @@ export default function CheckOut() {
       total: calculateTotal()
     };
 
-    // Guardar en Base de Datos real (JSON Server)
+    // Guardar en purchases.json (via json-server en localhost:3001)
     fetch("http://localhost:3001/purchases", {
       method: "POST",
       headers: {

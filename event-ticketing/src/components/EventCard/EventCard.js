@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './EventCard.css';
 
 export default function EventCard({ event }) {
     const [liked, setLiked] = useState(false);
+    const navigate = useNavigate();
+
+    function HandleEventClick(){
+        navigate(`/checkout/${event.id}`);
+    }
 
     return (
         <div className="event-card">
             <img
+                onClick={HandleEventClick}
                 src={event.image}
                 alt={event.title}
                 className="event-card-image"
@@ -28,18 +35,19 @@ export default function EventCard({ event }) {
 
                 <div className="event-card-footer">
                     <div className="event-card-price">
-                        <span className="event-card-price-label">Desde</span>
+                        <span className="event-card-price-label">From</span>
                         <span className="event-card-price-value">{event.price}</span>
                     </div>
 
                     <div className="event-card-actions">
                         <button
+                            type="button"
                             className={`event-card-action-btn ${liked ? 'liked' : ''}`}
                             onClick={(e) => {
                                 e.stopPropagation();
                                 setLiked(!liked);
                             }}
-                            aria-label="Favorito"
+                            aria-label="Favorite"
                         >
                             <svg viewBox="0 0 24 24" fill={liked ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2">
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
@@ -47,9 +55,10 @@ export default function EventCard({ event }) {
                         </button>
 
                         <button
+                            type="button"
                             className="event-card-action-btn"
                             onClick={(e) => e.stopPropagation()}
-                            aria-label="Compartir"
+                            aria-label="Share"
                         >
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <circle cx="18" cy="5" r="3" />
