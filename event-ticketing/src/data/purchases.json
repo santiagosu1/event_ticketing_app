@@ -76,7 +76,7 @@
       "total": 480
     },
     {
-      "id": 1770921986472,
+      "id": "1770921986472",
       "userId": "santisu05@gmail.com",
       "eventId": "evt-004",
       "eventTitle": "Valentine's Plans | 2026",
@@ -95,6 +95,48 @@
         }
       ],
       "total": 25
+    },
+    {
+      "id": 1770922372647,
+      "userId": "santisu05@gmail.com",
+      "eventId": "evt-003",
+      "eventTitle": "Le Paris - Elegant Dinner Experience",
+      "eventDate": "31 JAN",
+      "eventTime": "19:30",
+      "eventVenue": "Westin Hotel - Le Paris Restaurant",
+      "eventImage": "/images/event-le-paris.png",
+      "currency": "USD",
+      "purchaseDate": "2026-02-12T18:52:52.647Z",
+      "items": [
+        {
+          "id": "tkt-003-classic",
+          "name": "Classic Menu",
+          "qty": 2,
+          "price": 120
+        }
+      ],
+      "total": 240
+    },
+    {
+      "id": 1770922391551,
+      "userId": "santisu05@gmail.com",
+      "eventId": "evt-001",
+      "eventTitle": "Shadys 45 Years - Symphonic Gala",
+      "eventDate": "13 FEB",
+      "eventTime": "20:00",
+      "eventVenue": "National Grand Theater",
+      "eventImage": "/images/hero-concert-shadys.png",
+      "currency": "USD",
+      "purchaseDate": "2026-02-12T18:53:11.551Z",
+      "items": [
+        {
+          "id": "tkt-001-vip",
+          "name": "VIP",
+          "qty": 10,
+          "price": 250
+        }
+      ],
+      "total": 2500
     }
   ]
 }
