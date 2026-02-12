@@ -1,52 +1,123 @@
 import React from "react";
-import { useOutletContext } from "react-router-dom";
 import HeroCarousel from "../components/HeroCarousel/HeroCarousel";
 import EventsSection from "../components/EventsSection/EventsSection";
 import Categories from "../components/Categories/Categories";
-import eventsData from "../data/events.json";
 import "./Home.css";
 
 export default function Home() {
-    const { heroSlides, cantMissPlans, recommendedEvents } = eventsData;
-    const { searchTerm } = useOutletContext() || { searchTerm: "" };
-    const [selectedCategory, setSelectedCategory] = React.useState(null);
-
-    const isFiltering = searchTerm || selectedCategory;
-
-    const filterEvents = (events) => {
-        let filtered = events;
-
-        if (selectedCategory) {
-            filtered = filtered.filter(event =>
-                event.category?.toLowerCase() === selectedCategory.toLowerCase().split(' ')[0] || // Match "Concerts" with "concerts"
-                event.tags?.some(tag => selectedCategory.toLowerCase().includes(tag.toLowerCase()))
-            );
+    // Hero Carousel Data
+    const heroSlides = [
+        {
+            title: "Shadys 45 años - Gala Sinfónica",
+            image: "/images/hero-concert-shadys.png"
+        },
+        {
+            title: "The House - Electronic Music",
+            image: "/images/event-the-house.png"
+        },
+        {
+            title: "Le Paris - Fine Dining",
+            image: "/images/event-le-paris.png"
         }
+    ];
 
-        if (searchTerm) {
-            const lowerTerm = searchTerm.toLowerCase();
-            filtered = filtered.filter(event =>
-                event.title?.toLowerCase().includes(lowerTerm) ||
-                event.subtitle?.toLowerCase().includes(lowerTerm) ||
-                event.venue?.toLowerCase().includes(lowerTerm)
-            );
+    // Planes Imperdibles Events
+    const planesImperdibles = [
+        {
+            title: "Planes que enamoran | San Valentín 2026",
+            date: "29 ENE",
+            location: "Lima",
+            price: "S/ 10.00",
+            image: "/images/event-valentines.png"
+        },
+        {
+            title: "THE HOUSE",
+            date: "29 ENE",
+            location: "Lima",
+            price: "S/ 80.00",
+            image: "/images/event-the-house.png"
+        },
+        {
+            title: "Shadys 45 años - Gala Sinfónica",
+            date: "13 FEB",
+            location: "Lima",
+            price: "S/ 150.00",
+            image: "/images/hero-concert-shadys.png"
+        },
+        {
+            title: "Circo Montecarlo Huanuco 2026",
+            date: "28 ENE",
+            location: "Huanuco",
+            price: "S/ 20.00",
+            image: "/images/event-circus.png"
+        },
+        {
+            title: "Le Paris - Elegant Dinner",
+            date: "31 ENE",
+            location: "Lima",
+            price: "S/ 120.00",
+            image: "/images/event-le-paris.png"
+        },
+        {
+            title: "Festival Rock Peruano Vol. 02",
+            date: "31 ENE",
+            location: "Trujillo",
+            price: "S/ 50.00",
+            image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=400&h=300&fit=crop"
+        },
+        {
+            title: "SUU RABANAL EN LA LEY",
+            date: "31 ENE",
+            location: "Callao",
+            price: "S/ 50.00",
+            image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop"
+        },
+        {
+            title: "SALSA CUMBIA - HERMANOS YAIPEN",
+            date: "31 ENE",
+            location: "Santa",
+            price: "S/ 30.00",
+            image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop"
         }
+    ];
 
-        return filtered;
-    };
-
-    // If filtering, combine all relevant events into one list for better UX
-    // or keep sections separate but filtered. The user asked "solo me muestre lo que busque"
-    // implies showing results. Let's filter existing sections first.
-
-    const filteredCantMiss = filterEvents(cantMissPlans);
-    const filteredRecommended = filterEvents(recommendedEvents);
+    // Eventos Recomendados
+    const eventosRecomendados = [
+        {
+            title: "Circo Montecarlo Huanuco 2026",
+            date: "28 ENE",
+            location: "Huanuco",
+            price: "S/ 90.00",
+            image: "/images/event-circus.png"
+        },
+        {
+            title: "Le Paris - Elegant Dinner Event",
+            date: "29 ENE",
+            location: "Lima",
+            price: "S/ 0.00",
+            image: "/images/event-le-paris.png"
+        },
+        {
+            title: "THE HOUSE - Electronic Night",
+            date: "30 ENE",
+            location: "Lima",
+            price: "S/ 12.90",
+            image: "/images/event-the-house.png"
+        },
+        {
+            title: "Shadys - Gala Sinfónica",
+            date: "30 ENE",
+            location: "Lima",
+            price: "S/ 149.00",
+            image: "/images/hero-concert-shadys.png"
+        }
+    ];
 
     return (
         <div className="home-page">
             <div className="home-container">
-                {/* Hero Carousel - Hide when filtering */}
-                {!isFiltering && <HeroCarousel slides={heroSlides} />}
+                {/* Hero Carousel */}
+                <HeroCarousel slides={heroSlides} />
 
                 {/* Categories Section - Moved to top for easier filtering if desired, or keep at bottom? 
                     User didn't specify position, but for filtering UX it's usually better at top.
@@ -105,17 +176,17 @@ export default function Home() {
                     />
                 )}
 
-                {filteredCantMiss.length === 0 && filteredRecommended.length === 0 && isFiltering && (
-                    <div style={{ textAlign: 'center', padding: '50px', color: 'white' }}>
-                        <h3>No events found matching your criteria.</h3>
-                    </div>
-                )}
+                {/* Eventos Recomendados Section */}
+                <EventsSection
+                    subtitle="EVENTOS QUE PODRÍAN"
+                    title="GUSTARTE"
+                    events={eventosRecomendados}
+                    note="Te sugerimos eventos basándonos en tu historial de compras y búsquedas anteriores."
+                    carousel={false}
+                />
 
                 {/* Categories Section */}
-                <Categories
-                    selectedCategory={selectedCategory}
-                    onCategorySelect={setSelectedCategory}
-                />
+                <Categories />
             </div>
         </div>
     );
