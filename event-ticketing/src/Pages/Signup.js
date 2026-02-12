@@ -42,7 +42,6 @@ export default function Signup({ onClose = () => {}, onOpenLogin = () => {} }) {
               className={`left-bg ${fadeIn ? "fade-in" : "fade-out"}`}
               style={{ backgroundImage: currentBg }}
             />
-            <h2>Create your account</h2>
           </div>
 
           <div className="right-login-content">
